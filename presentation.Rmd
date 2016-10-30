@@ -1,0 +1,46 @@
+---
+title: "Exam of course Project: Shiny Application and Reproducible Pitch."
+author: "Maxim Kruglov"
+date: '30 october 2016 '
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Overview
+
+The app of this presentation was provided on the following link - https://dolfhinm.shinyapps.io/exam_2/
+
+Source code for ui.R and server.R files are available on the GitHub repo: https://github.com/dolfhinm/shiny_app_golton
+
+## Description of app
+
+Web Application functionality
+
+The app show relationship the height of parent and their child.
+
+This is min and max difference beetween their height. This is -7 and 6 cm, respectively.
+
+Also we show evaluation of the child's height and evaluation of the parent's height.
+
+## Dataset of Galton 
+
+Summary of data, which considered in this presentation
+```{r cars, echo = TRUE}
+library(HistData)
+summary(Galton)
+
+```
+
+## PLot of Dataset of Galton
+
+On the plot can see the linear dependence height of the child from the parents height.
+```{r pressure}
+library(HistData)
+library(ggplot2)
+plot(Galton)
+```
+
+
